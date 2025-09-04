@@ -1,4 +1,5 @@
 # DeadTools
+[![Developer Discord]](https://discord.gg/m39AUuSatU)
 
 **Version 1.0**
 
