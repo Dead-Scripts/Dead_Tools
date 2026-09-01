@@ -187,8 +187,8 @@ Citizen.CreateThread(function()
 					alreadyAttachedVeh = false
 				else
 					-- Can't change cause they are speaking to player
-					ShowNotification("~r~Error: You are currently speaking to player ~b~" .. GetPlayerName(players[newSpectatePlayer]))
-					TriggerServerEvent('Print:PrintClientMessage', "^1Error: You are currently speaking to player ^5" .. GetPlayerName(players[newSpectatePlayer]))
+					ShowNotification("~r~Error: You are currently speaking to player ~b~" .. GetPlayerName(players[playerIsSpectatingPlayer]))
+					TriggerServerEvent('Print:PrintClientMessage', "^1Error: You are currently speaking to player ^5" .. GetPlayerName(players[playerIsSpectatingPlayer]))
 				end
 			elseif IsControlJustReleased(0, 175) then
 				-- Go forwards
@@ -209,8 +209,8 @@ Citizen.CreateThread(function()
 					alreadyAttachedVeh = false
 				else
 					-- Can't change cause they are speaking to player
-					ShowNotification("~r~Error: You are currently speaking to player ~b~" .. GetPlayerName(players[newSpectatePlayer]))
-					TriggerServerEvent('Print:PrintClientMessage', "^1Error: You are currently speaking to player ^5" .. GetPlayerName(players[newSpectatePlayer]))
+					ShowNotification("~r~Error: You are currently speaking to player ~b~" .. GetPlayerName(players[playerIsSpectatingPlayer]))
+					TriggerServerEvent('Print:PrintClientMessage', "^1Error: You are currently speaking to player ^5" .. GetPlayerName(players[playerIsSpectatingPlayer]))
 				end
 			end
 		end
